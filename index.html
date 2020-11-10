@@ -1,0 +1,139 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    
+    <script src="./index.js"></script>
+    <style>
+        .vertical-break {
+            border-left: 2px solid #138496;
+            height: 225px;
+            position: absolute;
+            left: 50%;
+            margin: 10px 0px 0px 0px;
+            
+        }
+        
+        .control-bar{
+            margin: 10px 0px 0px 0px;
+        }
+        .activity-container{
+            border: 3px solid #138496;
+            height: 400px;
+            border-radius: 1rem;
+            background: white;
+            margin: 20px 0px 0px 0px;
+        }
+        .row-margin{
+            margin: 50px 0px 0px 0px;
+        }
+        .row-margin-top{
+            margin: 20px 0px 0px 0px;
+        }
+        body{
+            overflow: hidden;
+            background-image: linear-gradient(to bottom,  #0080ff,white);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="top-bar row row-margin-top">
+            <div class="activity-name col-sm">
+                <h4>s-d and s-t Graph of Longitudinal Wave</h4>
+            </div>
+            <div class="top-buttons col-sm">
+                <div class="float-right">
+                <button class="btn btn-info">intrduction</button>
+                <button class="btn btn-info">exercise</button>
+            </div>
+            </div>
+        </div>
+        <div class="activity-container container-fluid"></div>
+        <div class="control-bar row">
+            <div class="ctrl-0">
+                <div class="vertical-break"></div>
+            </div>
+            <div class="col-sm">
+                <div class="ctrl-1 row-margin">
+                    <span class="form-group">Wavelength</span>
+                    <div class="form-check form-check-inline form-control-group">
+                        <input type="radio" id="radioBtn1" name="rad-1" class="form-check-input" value="5" />
+                        <label for="radioBtn1" class="form-check-label">5 m</label>
+                    </div>
+                    <div class="form-check form-check-inline form-control-group">
+                        <input type="radio" id="radioBtn2" name="rad-1" class="form-check-input" value="10" /> <label
+                            for="radioBtn2" class="form-check-label">10 m</label>
+                    </div>
+                    <div class="form-check form-check-inline form-control-group">
+                        <input type="radio" id="radioBtn3" name="rad-1" class="form-check-input" value="20" /> <label
+                            for="radioBtn3" class="form-check-label">20 m</label>
+                    </div>
+                    <div class="form-check form-check-inline form-control-group">
+                        <input type="radio" id="radioBtn4" name="rad-1" class="form-check-input" value="40" /> <label
+                            for="radioBtn4" class="form-check-label">40 m</label>
+                    </div>
+    
+                </div>
+                <div class="ctrl-2 row-margin">
+                    <span class="form-group">Frequency</span>
+    
+                    <div class="form-check form-check-inline form-control-group">
+                        <input type="radio" id="radioBtn5" name="rad-2" class="form-check-input" value="0.05" /> <label
+                            for="radioBtn5" class="form-check-label">0.05 hz</label>
+                    </div>
+                    <div class="form-check form-check-inline form-control-group">
+                        <input type="radio" id="radioBtn6" name="rad-2" class="form-check-input" value="0.10" /> <label
+                            for="radioBtn6" class="form-check-label">0.10 hz</label>
+                    </div>
+                    <div class="form-check form-check-inline form-control-group">
+                        <input type="radio" id="radioBtn7" name="rad-2" class="form-check-input" value="0.20" />
+                        <label for="radioBtn7" class="form-check-label">0.20 hz</label>
+                    </div>
+                    <div class="form-check form-check-inline form-control-group">
+                        <input type="radio" id="radioBtn8" name="rad-2" class="form-check-input" value="0.40" />
+                        <label for="radioBtn8" class="form-check-label">0.40 hz</label>
+                    </div>
+    
+                </div>
+                <div class="ctrl-3 row-margin">
+                    <span class="form-group">Amplitude</span>
+                    <label for="rang1" class="rang-label">0.05 hz</label>
+                    <input type="range" id="rang1" name="rang-1" /> 
+                    
+    
+    
+                </div>
+                
+            </div>
+            <div class="col-sm">
+                <div class="ctrl-4 row-margin">
+                    <label for="rang2" class="form-group">Distance of B from A: <strong>10m</strong></label>
+                    <input type="range" id="rang2" name="rang-2" /> 
+    
+                </div>
+                <div class="ctrl-5 row-margin">
+                    <div class="btn-group float-right" role="group" >
+                        <button type="button" class="btn btn-secondary"><i class="fas fa-pause"></i></button>
+                        <button type="button" class="btn btn-secondary"><i class="fas fa-play"></i></button>
+                        <button type="button" class="btn btn-secondary"><i class="fas fa-forward"></i></button>
+                      </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+</html>
