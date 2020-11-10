@@ -1,8 +1,89 @@
 .vertical-break {
-    border-left: 6px solid green;
-  height: 500px;
+  border-left: 2px solid #138496;
+  height: 225px;
   position: absolute;
   left: 50%;
-  margin-left: -3px;
-  top: 0;
-  }
+  margin: 10px 0px 0px 0px;
+  
+}
+
+.control-bar{
+  margin: 10px 0px 0px 0px;
+}
+.activity-container{
+  
+  height: 500px;
+  
+  background-image: url('./assets/bg_graph.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 10px 0px 0px 0px;
+  
+  
+}
+.row-margin{
+  margin: 50px 0px 0px 0px;
+}
+.row-margin-top{
+  /* margin: 20px 0px 0px 0px; */
+}
+body{
+  /* overflow: hidden; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image: url('./assets/BG.png');
+}
+  
+.top-bar{
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 80px;
+  background-image: url('./assets/s-d.png');
+}
+.btn-exer{
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image: url('./assets/');
+  
+}
+.btn-intro{
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  
+}
+.unchecked{
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 1rem;
+  width: 1rem;
+  background-image: url('./assets/radio_BTn.png');
+}
+.checked{
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 1rem;
+  width: 1rem;
+  background-image: url('./assets/radio_BTn2.png');
+}
+.slider{
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 430px;
+  height: 20px;
+  background-image: url('./assets/Slider.png');
+}
+ul{
+  display: inline-flex;
+}
+ul li {
+  padding: 12px;
+  list-style: none;
+}
