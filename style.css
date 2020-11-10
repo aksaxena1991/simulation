@@ -22,12 +22,8 @@
   
   
 }
-.row-margin{
-  margin: 50px 0px 0px 0px;
-}
-.row-margin-top{
-  /* margin: 20px 0px 0px 0px; */
-}
+
+
 body{
   /* overflow: hidden; */
   background-repeat: no-repeat;
@@ -60,30 +56,85 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: 1rem;
-  width: 1rem;
+  height: 2rem;
+  width: 2rem;
   background-image: url('./assets/radio_BTn.png');
 }
 .checked{
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: 1rem;
-  width: 1rem;
+  height: 2rem;
+  width: 2rem;
   background-image: url('./assets/radio_BTn2.png');
 }
-.slider{
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  width: 430px;
-  height: 20px;
-  background-image: url('./assets/Slider.png');
-}
+
+
+
 ul{
   display: inline-flex;
 }
 ul li {
   padding: 12px;
   list-style: none;
+}
+.label-margin{
+  margin: 5px;
+}
+.amplitudeSlider{
+  background: #DFECEE;
+}
+.distanceSlider{
+  background: #BDD8DD;
+}
+.slider{
+  -webkit-appearance: none;
+  width: 500px;
+  height: 24px;
+ background-position: center;
+  /* border-radius: 5px; */
+  
+  outline: none;
+  opacity: 1;
+  background-image: url('./assets/Slider.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 2rem;
+  height: 2rem;
+  
+  border: 0;
+  background: url('./assets/Radio_btn1.png');
+  cursor: pointer;
+}
+.slider::-webkit-slider-thumb:hover{
+  -webkit-appearance: none;
+  appearance: none;
+  width: 2rem;
+  height: 2rem;
+  
+  border: 0;
+  background: url('./assets/Y_Radio_btn.png');
+  cursor: pointer; 
+}
+
+.slider::-moz-range-thumb {
+  width: 2rem;
+  height: 2rem;
+  border: 0;
+  background: url('./assets/Radio_btn1.png');
+  cursor: pointer;
+}
+.slider::-moz-range-thumb:hover{
+  width: 2rem;
+  height: 2rem;
+  border: 0;
+  background: url('./assets/Y_Radio_btn.png');
+  cursor: pointer;
 }

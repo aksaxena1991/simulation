@@ -19,7 +19,7 @@
 
 <body onload="init()">
     <div class="container-fluid container-background">
-        <div class="top-bar row row-margin-top">
+        <div class="top-bar row">
             <!-- <div class="activity-name col-sm">
                 <h4>s-d and s-t Graph of Longitudinal Wave</h4>
             </div> -->
@@ -36,57 +36,87 @@
                 <div class="vertical-break"></div>
             </div>
             <div class="col-sm">
-                <div class="ctrl-1 row-margin">
-                    <span class="form-group">Wavelength</span>
-                    <div class="form-check form-check-inline form-control-group">
-                        <span class="radioBtn unchecked" value="5m"></span>
-                        <label for="radioBtn1" class="form-check-label">5 m</label>
-                    </div>
-                    <div class="form-check form-check-inline form-control-group">
-                        <span class="radioBtn unchecked"value="10m"></span>
-                        <label
-                            for="radioBtn2" class="form-check-label">10 m</label>
-                    </div>
-                    <div class="form-check form-check-inline form-control-group">
-                        <span class="radioBtn unchecked" value="20m"></span>
-                         <label
-                            for="radioBtn3" class="form-check-label">20 m</label>
-                    </div>
-                    <div class="form-check form-check-inline form-control-group">
-                        <span class="radioBtn unchecked" value="40m"></span>
-                        <label
-                            for="radioBtn4" class="form-check-label">40 m</label>
-                    </div>
+                <div class="ctrl-1 ">
+                    <ul>
+                        <li>
+                            <span class="form-group">Wavelength</span>
+                        </li>
+                        <li>
+                            <div class="form-check form-check-inline form-control-group">
+                                <span class="wavelengthBtn unchecked" value="5m"></span>
+                                <label for="1" class="form-check-label label-margin">5 m</label>
+                            </div>
+                        </li>
+                        <li><div class="form-check form-check-inline form-control-group">
+                            <span class="wavelengthBtn unchecked"value="10m"></span>
+                            <label
+                                for="2" class="form-check-label label-margin">10 m</label>
+                        </div></li>
+                        <li><div class="form-check form-check-inline form-control-group">
+                            <span class="wavelengthBtn unchecked" value="20m"></span>
+                             <label
+                                for="3" class="form-check-label label-margin">20 m</label>
+                        </div></li>
+                        <li><div class="form-check form-check-inline form-control-group">
+                            <span class="wavelengthBtn unchecked " value="40m"></span>
+                            <label
+                                for="4" class="form-check-label label-margin">40 m</label>
+                        </div></li>
+                    </ul>
+                    
+                    
+                    
+                    
+                    
     
                 </div>
-                <div class="ctrl-2 row-margin">
-                    <span class="form-group">Frequency</span>
+                <div class="ctrl-2 ">
+                    <ul>
+                        <li>
+                            <span class="form-group">Frequency</span>
+                        </li>
+                        <li><div class="form-check form-check-inline form-control-group">
+                        
+                            <span class=" unchecked frequencyBtn" value="0.05"></span>
+                            
+                            <label
+                                for="5" class="form-check-label label-margin">0.05 hz</label>
+                        </div></li>
+                        <li><div class="form-check form-check-inline form-control-group">
+                            <span class=" unchecked frequencyBtn" value="0.1"></span> <label
+                                for="6" class="form-check-label label-margin">0.10 hz</label>
+                        </div></li>
+                        <li><div class="form-check form-check-inline form-control-group">
+                            <span class=" unchecked frequencyBtn" value="0.2"></span>
+                            <label for="7" class="form-check-label label-margin">0.20 hz</label>
+                        </div></li>
+                        <li><div class="form-check form-check-inline form-control-group">
+                            <span class=" unchecked frequencyBtn" value="0.4"></span>
+                            <label for="8" class="form-check-label label-margin">0.40 hz</label>
+                        </div></li>
+                    </ul>
+                    
     
-                    <div class="form-check form-check-inline form-control-group">
-                        
-                        <span class="radioBtn unchecked frequencyBtn" value="0.05"></span>
-                        
-                        <label
-                            for="radioBtn5" class="form-check-label">0.05 hz</label>
-                    </div>
-                    <div class="form-check form-check-inline form-control-group">
-                        <span class="radioBtn unchecked frequencyBtn" value="0.1"></span> <label
-                            for="radioBtn6" class="form-check-label">0.10 hz</label>
-                    </div>
-                    <div class="form-check form-check-inline form-control-group">
-                        <span class="radioBtn unchecked frequencyBtn" value="0.2"></span>
-                        <label for="radioBtn7" class="form-check-label">0.20 hz</label>
-                    </div>
-                    <div class="form-check form-check-inline form-control-group">
-                        <span class="radioBtn unchecked frequencyBtn" value="0.4"></span>
-                        <label for="radioBtn8" class="form-check-label">0.40 hz</label>
-                    </div>
+                    
+                    
+                    
+                    
     
                 </div>
-                <div class="ctrl-3 row-margin">
-                    <span class="form-group">Amplitude</span>
-                    <label for="rang1" class="rang-label">0.05 hz</label>
-                    <input type="range" id="rang1" name="rang-1" /> 
+                <div class="ctrl-3 ">
+                    <ul>
+                        <li>
+                            <span class="form-group">Amplitude</span>
+                        </li>
+                        <li>
+                            <input type="range" min="0" max="100" value="0" class="slider amplitudeSlider" >
+                            <!-- <div class="slider" value="0.2m" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                            <div class="sliderBtn" draggable="true" ondragstart="drag(event)" value="ampValue"></div> -->
+                        </li>
+                    </ul>
+                    
+                    <!-- <label for="rang1" class="rang-label">0.05 hz</label>
+                    <input type="range" id="rang1" name="rang-1" />  -->
                     
     
     
@@ -94,21 +124,21 @@
                 
             </div>
             <div class="col-sm">
-                <div class="ctrl-4 row-margin">
+                <div class="ctrl-4 ">
                     
                     <ul>
                         <li>
                             Distance of B from A: <strong>10m</strong>
                         </li>
                         <li>
-                            <div class="slider" value="10m"></div>
+                            <input type="range" min="0" max="100" value="0" class="slider distanceSlider" >
                         </li>
                     </ul>
                     <!-- <label for="rang1" class="rang-label">0.05 hz</label> -->
                     
     
                 </div>
-                <div class="ctrl-5 row-margin">
+                <div class="ctrl-5 ">
                     <div class="btn-group float-right" role="group" >
                         <button type="button" class="btn btn-secondary"><i class="fas fa-pause"></i></button>
                         <button type="button" class="btn btn-secondary"><i class="fas fa-play"></i></button>
