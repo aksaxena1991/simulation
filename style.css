@@ -70,7 +70,13 @@ body{
 }
 
 
-
+.graphSettings {
+display: initial;
+}
+.graphSettings li {
+  padding: 5px;
+  list-style: none;
+}
 ul{
   display: inline-flex;
 }
@@ -136,5 +142,33 @@ ul li {
   height: 2rem;
   border: 0;
   background: url('./assets/Y_Radio_btn.png');
+  cursor: pointer;
+}
+.pause-btn{
+  width: 4rem;
+  height: 2rem;
+  border: 0;
+  background: url('./assets/play-P-N_btn.png') 0px 0px;
+  cursor: pointer;
+}
+.play-btn{
+  width: 4rem;
+  height: 2rem;
+  border: 0;
+  background: url('./assets/play-P-N_btn.png') -62px 0px;
+  cursor: pointer;
+}
+.forward-btn{
+  width: 4rem;
+  height: 2rem;
+  border: 0;
+  background: url('./assets/play-P-N_btn.png') -125px 0px;
+  cursor: pointer;
+}
+.reset-btn{
+  width: 5.5rem;
+  height: 2rem;
+  border: 0;
+  background: url('./assets/Rest_btn.png') ;
   cursor: pointer;
 }
