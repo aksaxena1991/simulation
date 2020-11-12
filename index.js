@@ -10,11 +10,3 @@ let init = () =>{
         $(this).addClass('checked').removeClass('unchecked');
     });
 }
-// let drag = (event) => {
-//     console.log('anubhav',event);
-//     event.dataTransfer.setData("text", event.target.value);
-// }
-// let drop = (event) => {}
-// let allowDrop = (event) => {
-//     event.preventDefault();
-// }

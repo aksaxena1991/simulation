@@ -12,13 +12,14 @@
 }
 .activity-container{
   
-  height: 500px;
+  height: 400px;
+  border: 3px solid #138496;
   
-  background-image: url('./assets/bg_graph.png');
-  background-repeat: no-repeat;
+  border-radius: 1rem;
+  background: white;
   background-size: cover;
-  position: relative;
   margin: 10px 0px 0px 0px;
+  position: relative;
   
   
 }
@@ -26,6 +27,7 @@
 
 body{
   /* overflow: hidden; */
+  overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -39,18 +41,10 @@ body{
   height: 80px;
   background-image: url('./assets/s-d.png');
 }
-.btn-exer{
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  background-image: url('./assets/');
-  
-}
-.btn-intro{
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  
+
+
+a:hover {
+  text-decoration: none;
 }
 .unchecked{
   background-repeat: no-repeat;
@@ -70,44 +64,42 @@ body{
 }
 
 
-.graphSettings {
-display: initial;
-}
-.graphSettings li {
-  padding: 5px;
-  list-style: none;
+
+.right-cols,.left-cols{
+  margin-top: 1.5rem;
 }
 ul{
   display: inline-flex;
 }
 ul li {
-  padding: 12px;
+  padding: 0.25rem;
   list-style: none;
 }
 .label-margin{
   margin: 5px;
 }
 .amplitudeSlider{
-  background: #DFECEE;
+  background: #C9DFE3;
 }
 .distanceSlider{
-  background: #BDD8DD;
+  background: #A5CAD0;
 }
+
 .slider{
   -webkit-appearance: none;
-  width: 500px;
-  height: 24px;
+  width: 320px;
+  height: 15px;
  background-position: center;
   /* border-radius: 5px; */
   
   outline: none;
-  opacity: 1;
+  /* opacity: 1; */
   background-image: url('./assets/Slider.png');
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
+  /* -webkit-transition: .2s; */
+  /* transition: opacity .2s; */
 }
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -172,3 +164,33 @@ ul li {
   background: url('./assets/Rest_btn.png') ;
   cursor: pointer;
 }
+
+.top-buttons {
+  margin: 40px 0px 0px 0px;
+}
+.right-radio input[type=radio]{
+  visibility: hidden;
+}
+.right-radio p {
+  margin: -44px 0px 0px 70px;
+
+}
+.right-radio input[type=radio] + label{
+  /* display: none; */
+  height: 2rem;
+  width: 2rem;
+  background-image: url('./assets/radio_BTn.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.right-radio input[type=radio]:checked + label{
+  /* display: none; */
+  /* opacity: 1; */
+  height: 2rem;
+  width: 2rem;
+  background-image: url('./assets/radio_BTn2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
