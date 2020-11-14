@@ -1,10 +1,9 @@
 .vertical-break {
   border-left: 2px solid #138496;
-  height: 225px;
-  position: absolute;
-  left: 50%;
-  margin: 10px 0px 0px 0px;
-  
+    height: 225px;
+    position: fixed;
+    left: 46%;
+    margin: 10px 0px 0px 0px;
 }
 
 .control-bar{
@@ -173,24 +172,49 @@ ul li {
 }
 .right-radio p {
   margin: -44px 0px 0px 70px;
-
 }
-.right-radio input[type=radio] + label{
-  /* display: none; */
+.right-radio label input[type=radio]{
   height: 2rem;
   width: 2rem;
-  background-image: url('./assets/radio_BTn.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 5px;
+}
+.right-radio label  input[type=radio]:checked {
+  height: 2rem;
+  width: 2rem;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.right-radio input[type=radio]:checked + label{
-  /* display: none; */
-  /* opacity: 1; */
-  height: 2rem;
-  width: 2rem;
-  background-image: url('./assets/radio_BTn2.png');
+input[type='radio']:after {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  top: 3px;
+  left: 0px;
+  position: relative;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  background-image: url(./assets/radio_BTn.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: 0px;
 }
 
-
+input[type='radio']:checked:after {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  top: 3px;
+  left: 0px;
+  position: relative;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  background-image: url(./assets/radio_BTn2.png);
+  background-repeat: no-repeat;
+  background-position: 0px;
+  }
+  label{
+    margin-right: 4px;
+  }
