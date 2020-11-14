@@ -194,3 +194,30 @@ ul li {
 }
 
 
+.upper-graph{  
+  height: 260px;
+  width: 720px;
+  /* z-index: 1; */
+  margin: 15px 0px 0px 305px;
+  background-image: url("./assets/graph.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.wave {
+  height: 228px;
+  width: 570px;
+  background-image: url("./assets/G_wave.svg");
+  background-repeat: repeat-x;
+  background-size: cover;
+  margin: 23px 0px 0px 10px;
+  position: absolute;
+}
+.lower-graph {
+  
+  height: 260px;
+  width: 720px;
+  margin: 15px 0px 0px 305px;
+  background-image: url("./assets/GB.png");
+  background-repeat: no-repeat;
+  background-position: center; 
+}
